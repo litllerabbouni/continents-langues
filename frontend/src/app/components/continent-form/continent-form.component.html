@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Create a continent</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form (submit)="submitContinent()" class="mat-elevation-z1" style="width: 100%; padding: 5px;">
+            <mat-form-field>
+                <input matInput placeholder="Code" name="code" [(ngModel)] = "continent.code" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Name" name="name" [(ngModel)] = "continent.name" required>
+            </mat-form-field>
+            <button class="btn btn-primary" type="submit">Save</button>
+        </form>
+    </mat-card-content> 
+</mat-card>
